@@ -1,0 +1,219 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "2. Scaffold Foundry and the minimal ERC-1155 contract": [
+      {
+        "executionId": "2605c8c7-b567-4955-aafc-2090eae2dc94",
+        "chatSessionId": "sess_5c76321e-2080-4b85-a0cb-66c765eb31a2",
+        "timestamp": 1790286009799
+      },
+      {
+        "executionId": "2605c8c7-b567-4955-aafc-2090eae2dc94",
+        "chatSessionId": "sess_5c76321e-2080-4b85-a0cb-66c765eb31a2",
+        "timestamp": 1790286017952
+      },
+      {
+        "executionId": "2605c8c7-b567-4955-aafc-2090eae2dc94",
+        "chatSessionId": "sess_5c76321e-2080-4b85-a0cb-66c765eb31a2",
+        "timestamp": 1790286839190
+      }
+    ],
+    "3. Implement ticket purchase with native + ERC-20 and serial tracking": [
+      {
+        "executionId": "2605c8c7-b567-4955-aafc-2090eae2dc94",
+        "chatSessionId": "sess_5c76321e-2080-4b85-a0cb-66c765eb31a2",
+        "timestamp": 1790286009861
+      },
+      {
+        "executionId": "2605c8c7-b567-4955-aafc-2090eae2dc94",
+        "chatSessionId": "sess_5c76321e-2080-4b85-a0cb-66c765eb31a2",
+        "timestamp": 1790286843648
+      },
+      {
+        "executionId": "2605c8c7-b567-4955-aafc-2090eae2dc94",
+        "chatSessionId": "sess_5c76321e-2080-4b85-a0cb-66c765eb31a2",
+        "timestamp": 1790286992719
+      }
+    ],
+    "4. Implement anti-scalping transfer enforcement and on-chain resale": [
+      {
+        "executionId": "2605c8c7-b567-4955-aafc-2090eae2dc94",
+        "chatSessionId": "sess_5c76321e-2080-4b85-a0cb-66c765eb31a2",
+        "timestamp": 1790286009911
+      },
+      {
+        "executionId": "2605c8c7-b567-4955-aafc-2090eae2dc94",
+        "chatSessionId": "sess_5c76321e-2080-4b85-a0cb-66c765eb31a2",
+        "timestamp": 1790286996679
+      },
+      {
+        "executionId": "2605c8c7-b567-4955-aafc-2090eae2dc94",
+        "chatSessionId": "sess_5c76321e-2080-4b85-a0cb-66c765eb31a2",
+        "timestamp": 1790287247912
+      }
+    ],
+    "5. Implement gate validation and gate-staff roles": [
+      {
+        "executionId": "2605c8c7-b567-4955-aafc-2090eae2dc94",
+        "chatSessionId": "sess_5c76321e-2080-4b85-a0cb-66c765eb31a2",
+        "timestamp": 1790286009962
+      },
+      {
+        "executionId": "2605c8c7-b567-4955-aafc-2090eae2dc94",
+        "chatSessionId": "sess_5c76321e-2080-4b85-a0cb-66c765eb31a2",
+        "timestamp": 1790287251621
+      },
+      {
+        "executionId": "2605c8c7-b567-4955-aafc-2090eae2dc94",
+        "chatSessionId": "sess_5c76321e-2080-4b85-a0cb-66c765eb31a2",
+        "timestamp": 1790287375238
+      }
+    ],
+    "6. Implement withdrawal, deploy script, and complete the exploit/fuzz suite": [
+      {
+        "executionId": "2605c8c7-b567-4955-aafc-2090eae2dc94",
+        "chatSessionId": "sess_5c76321e-2080-4b85-a0cb-66c765eb31a2",
+        "timestamp": 1790286010038
+      },
+      {
+        "executionId": "2605c8c7-b567-4955-aafc-2090eae2dc94",
+        "chatSessionId": "sess_5c76321e-2080-4b85-a0cb-66c765eb31a2",
+        "timestamp": 1790287380175
+      },
+      {
+        "executionId": "2605c8c7-b567-4955-aafc-2090eae2dc94",
+        "chatSessionId": "sess_5c76321e-2080-4b85-a0cb-66c765eb31a2",
+        "timestamp": 1790287698482
+      }
+    ],
+    "7. Build the `shared` package with types, ABI, and EIP-712 helpers": [
+      {
+        "executionId": "2605c8c7-b567-4955-aafc-2090eae2dc94",
+        "chatSessionId": "sess_5c76321e-2080-4b85-a0cb-66c765eb31a2",
+        "timestamp": 1790286010094
+      },
+      {
+        "executionId": "2605c8c7-b567-4955-aafc-2090eae2dc94",
+        "chatSessionId": "sess_5c76321e-2080-4b85-a0cb-66c765eb31a2",
+        "timestamp": 1790287704812
+      },
+      {
+        "executionId": "2605c8c7-b567-4955-aafc-2090eae2dc94",
+        "chatSessionId": "sess_5c76321e-2080-4b85-a0cb-66c765eb31a2",
+        "timestamp": 1790289444605
+      }
+    ],
+    "8. Scaffold Next.js (App Router) with Tailwind, PWA, and the mocked Web3 layer": [
+      {
+        "executionId": "2605c8c7-b567-4955-aafc-2090eae2dc94",
+        "chatSessionId": "sess_5c76321e-2080-4b85-a0cb-66c765eb31a2",
+        "timestamp": 1790286010144
+      },
+      {
+        "executionId": "2605c8c7-b567-4955-aafc-2090eae2dc94",
+        "chatSessionId": "sess_5c76321e-2080-4b85-a0cb-66c765eb31a2",
+        "timestamp": 1790289449521
+      },
+      {
+        "executionId": "2605c8c7-b567-4955-aafc-2090eae2dc94",
+        "chatSessionId": "sess_5c76321e-2080-4b85-a0cb-66c765eb31a2",
+        "timestamp": 1790291331042
+      }
+    ],
+    "9. Build the user portal — discovery feed and My Tickets with dynamic QR": [
+      {
+        "executionId": "2605c8c7-b567-4955-aafc-2090eae2dc94",
+        "chatSessionId": "sess_5c76321e-2080-4b85-a0cb-66c765eb31a2",
+        "timestamp": 1790286010190
+      },
+      {
+        "executionId": "2605c8c7-b567-4955-aafc-2090eae2dc94",
+        "chatSessionId": "sess_5c76321e-2080-4b85-a0cb-66c765eb31a2",
+        "timestamp": 1790291340470
+      },
+      {
+        "executionId": "2605c8c7-b567-4955-aafc-2090eae2dc94",
+        "chatSessionId": "sess_5c76321e-2080-4b85-a0cb-66c765eb31a2",
+        "timestamp": 1790292958824
+      }
+    ],
+    "10. Build the gate scanner (Gatekeeper) with off-chain and on-chain verification": [
+      {
+        "executionId": "2605c8c7-b567-4955-aafc-2090eae2dc94",
+        "chatSessionId": "sess_5c76321e-2080-4b85-a0cb-66c765eb31a2",
+        "timestamp": 1790286010243
+      },
+      {
+        "executionId": "2605c8c7-b567-4955-aafc-2090eae2dc94",
+        "chatSessionId": "sess_5c76321e-2080-4b85-a0cb-66c765eb31a2",
+        "timestamp": 1790292962795
+      },
+      {
+        "executionId": "2605c8c7-b567-4955-aafc-2090eae2dc94",
+        "chatSessionId": "sess_5c76321e-2080-4b85-a0cb-66c765eb31a2",
+        "timestamp": 1790293449353
+      }
+    ],
+    "11. Build the organizer dashboard with IPFS upload and analytics": [
+      {
+        "executionId": "2605c8c7-b567-4955-aafc-2090eae2dc94",
+        "chatSessionId": "sess_5c76321e-2080-4b85-a0cb-66c765eb31a2",
+        "timestamp": 1790286010288
+      },
+      {
+        "executionId": "2605c8c7-b567-4955-aafc-2090eae2dc94",
+        "chatSessionId": "sess_5c76321e-2080-4b85-a0cb-66c765eb31a2",
+        "timestamp": 1790293453071
+      },
+      {
+        "executionId": "2605c8c7-b567-4955-aafc-2090eae2dc94",
+        "chatSessionId": "sess_5c76321e-2080-4b85-a0cb-66c765eb31a2",
+        "timestamp": 1790294033132
+      }
+    ],
+    "12. Implement the subgraph and the GraphQL DataProvider": [
+      {
+        "executionId": "2605c8c7-b567-4955-aafc-2090eae2dc94",
+        "chatSessionId": "sess_5c76321e-2080-4b85-a0cb-66c765eb31a2",
+        "timestamp": 1790286010327
+      },
+      {
+        "executionId": "2605c8c7-b567-4955-aafc-2090eae2dc94",
+        "chatSessionId": "sess_5c76321e-2080-4b85-a0cb-66c765eb31a2",
+        "timestamp": 1790294036909
+      },
+      {
+        "executionId": "2605c8c7-b567-4955-aafc-2090eae2dc94",
+        "chatSessionId": "sess_5c76321e-2080-4b85-a0cb-66c765eb31a2",
+        "timestamp": 1790296817021
+      }
+    ],
+    "13. Wire the end-to-end flow and document service swaps": [
+      {
+        "executionId": "2605c8c7-b567-4955-aafc-2090eae2dc94",
+        "chatSessionId": "sess_5c76321e-2080-4b85-a0cb-66c765eb31a2",
+        "timestamp": 1790286010373
+      },
+      {
+        "executionId": "2605c8c7-b567-4955-aafc-2090eae2dc94",
+        "chatSessionId": "sess_5c76321e-2080-4b85-a0cb-66c765eb31a2",
+        "timestamp": 1790296820868
+      },
+      {
+        "executionId": "a7fd186f-3a39-42f6-9264-d96aed6e1426",
+        "chatSessionId": "sess_44b006a7-8767-4827-a0d6-4828ab2ebf34",
+        "timestamp": 1790345661326
+      },
+      {
+        "executionId": "a7fd186f-3a39-42f6-9264-d96aed6e1426",
+        "chatSessionId": "sess_44b006a7-8767-4827-a0d6-4828ab2ebf34",
+        "timestamp": 1790345668251
+      },
+      {
+        "executionId": "a7fd186f-3a39-42f6-9264-d96aed6e1426",
+        "chatSessionId": "sess_44b006a7-8767-4827-a0d6-4828ab2ebf34",
+        "timestamp": 1790347642973
+      }
+    ]
+  }
+}

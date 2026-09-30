@@ -1,0 +1,43 @@
+specVersion: 1.0.0
+description: NFTickets Chile — EventTicketing indexer for Base Sepolia
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum
+    name: EventTicketing
+    # Base Sepolia (chainId 84532). The Graph network identifier is "base-sepolia".
+    network: base-sepolia
+    source:
+      # PLACEHOLDER address + startBlock — replace after deploying EventTicketing.sol
+      # via packages/contracts/script/Deploy.s.sol. These can also be substituted
+      # from the environment at deploy time (e.g. envsubst / a deploy script that
+      # rewrites this file), keeping the checked-in value as a documented default.
+      address: "0x0000000000000000000000000000000000000000"
+      abi: EventTicketing
+      startBlock: 0
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.9
+      language: wasm/assemblyscript
+      entities:
+        - Event
+        - Tier
+        - Ticket
+        - Validation
+      abis:
+        # Copied from the Foundry build via `pnpm run copy-abi`
+        # (packages/contracts/out/EventTicketing.sol/EventTicketing.json).
+        - name: EventTicketing
+          file: ./abis/EventTicketing.json
+      eventHandlers:
+        - event: EventCreated(indexed uint256,indexed address)
+          handler: handleEventCreated
+        - event: TierAdded(indexed uint256,indexed uint256,uint256,uint256,uint256,address)
+          handler: handleTierAdded
+        - event: TicketPurchased(indexed uint256,indexed uint256,indexed address,uint256,uint256)
+          handler: handleTicketPurchased
+        - event: TicketResold(indexed uint256,indexed uint256,uint256,address,address,uint256)
+          handler: handleTicketResold
+        - event: TicketValidated(indexed uint256,indexed uint256,uint256,address,address)
+          handler: handleTicketValidated
+      file: ./src/mapping.ts

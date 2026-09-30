@@ -1,0 +1,19 @@
+{
+  "name": "@nftickets/subgraph",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "copy-abi": "node scripts/copy-abi.mjs",
+    "codegen": "npm run copy-abi && graph codegen",
+    "build": "npm run codegen && graph build",
+    "test": "node scripts/run-tests.mjs",
+    "lint": "echo \"[subgraph] lint handled by graph codegen/build type checks\" && exit 0"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.79.0",
+    "@graphprotocol/graph-ts": "0.35.1"
+  },
+  "devDependencies": {
+    "matchstick-as": "0.6.0"
+  }
+}

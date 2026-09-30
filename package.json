@@ -1,0 +1,23 @@
+{
+  "name": "nftickets-chile",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Decentralized event ticketing platform (Web3 dApp) — ERC-1155 tickets, on-chain resale caps, dynamic EIP-712 QR verification.",
+  "packageManager": "pnpm@9.15.0",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "format": "prettier --write \"**/*.{ts,tsx,js,json,md,sol}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,js,json,md,sol}\""
+  },
+  "devDependencies": {
+    "prettier": "^3.3.3",
+    "turbo": "^2.3.3",
+    "typescript": "^5.6.3"
+  }
+}

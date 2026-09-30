@@ -1,0 +1,41 @@
+# dependencies
+node_modules/
+.pnpm-store/
+
+# turbo
+.turbo/
+
+# builds
+dist/
+build/
+out/
+.next/
+generated/
+
+# playwright (e2e)
+test-results/
+playwright-report/
+playwright/.cache/
+blob-report/
+
+# foundry
+packages/contracts/cache/
+packages/contracts/out/
+packages/contracts/broadcast/
+packages/contracts/lib/
+
+# env & secrets
+.env
+.env.local
+.env.*.local
+*.key
+
+# logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# os / editor
+.DS_Store
+.idea/
+*.swp

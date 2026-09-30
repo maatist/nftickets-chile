@@ -1,0 +1,81 @@
+# The Graph schema for the NFTickets EventTicketing contract.
+#
+# Entities mirror the on-chain data model (see packages/contracts/src/EventTicketing.sol
+# and the design doc). Only data carried by the five indexed events is stored here.
+#
+# IMPORTANT — display-only fields are intentionally absent:
+#   On-chain events do NOT carry the event name, description, cover image,
+#   location, or start time. Those live in IPFS metadata (uploaded via the
+#   StorageProvider) and are not indexable from contract logs alone. The GraphQL
+#   DataProvider (apps/web) fills these display-only fields with documented
+#   fallbacks when mapping subgraph entities into the frontend view models.
+#
+# ID conventions (all IDs are strings):
+#   Event      : "<eventId>"
+#   Tier       : "<eventId>-<tier>"
+#   Ticket     : "<eventId>-<tier>-<serial>"
+#   Validation : "<eventId>-<tier>-<serial>"  (one validation per ticket)
+
+type Event @entity {
+  "The on-chain eventId (also used as the entity id)."
+  id: ID!
+  "The on-chain eventId as a BigInt (equals the numeric form of id)."
+  eventId: BigInt!
+  "Organizer wallet address (lowercase via Bytes)."
+  organizer: Bytes!
+  "Block timestamp when the event was created."
+  createdAt: BigInt!
+  "Tiers that belong to this event."
+  tiers: [Tier!]! @derivedFrom(field: "event")
+}
+
+type Tier @entity {
+  "Composite id: <eventId>-<tier>."
+  id: ID!
+  "The parent event."
+  event: Event!
+  "Tier index within the event."
+  tier: BigInt!
+  "Total supply configured for the tier."
+  maxSupply: BigInt!
+  "Units minted (sold) so far. Incremented on each TicketPurchased."
+  minted: BigInt!
+  "Base price in the settlement token's smallest unit."
+  price: BigInt!
+  "Resale price cap in the settlement token's smallest unit."
+  maxResalePrice: BigInt!
+  "Settlement token address; the zero address means native (ETH)."
+  payToken: Bytes!
+  "Tickets minted for this tier."
+  tickets: [Ticket!]! @derivedFrom(field: "tier")
+}
+
+type Ticket @entity {
+  "Composite id: <eventId>-<tier>-<serial>."
+  id: ID!
+  "The parent event (denormalized for convenient querying)."
+  event: Event!
+  "The parent tier."
+  tier: Tier!
+  "Individual serial within (eventId, tier)."
+  serial: BigInt!
+  "Current owner address. Updated on resale."
+  owner: Bytes!
+  "Whether the ticket has been validated at the gate."
+  used: Boolean!
+  "The validation record, if the ticket has been validated."
+  validation: Validation @derivedFrom(field: "ticket")
+}
+
+type Validation @entity {
+  "Composite id: <eventId>-<tier>-<serial> (one validation per ticket)."
+  id: ID!
+  "The validated ticket."
+  ticket: Ticket!
+  "Owner claimed at validation time."
+  ticketOwner: Bytes!
+  "Gate-staff address that performed the validation."
+  validator: Bytes!
+  "Block timestamp of the validation."
+  timestamp: BigInt!
+}
